@@ -70,6 +70,7 @@ namespace Tailviewer.Core
 				// One of the most bizare formats: Time of day is apparently not interesting enough, just as are fractions of a second.
 				// We do, however, get the seconds (in nano seconds) since the start of the application...
 				new TimeOfDaySecondsSinceStartParser(),
+				new DateTimeParser("MM-dd HH:mm:ss"),
 				new DateTimeParser("HH:mm:ss.fff"),
 				new DateTimeParser("HH:mm:ss")
 			)
