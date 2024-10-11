@@ -8,7 +8,7 @@ namespace Tailviewer.Core
 	/// <summary>
 	///     This class serves as a collection of named constructors to create various <see cref="ILogEntryFilter" />s.
 	/// </summary>
-	internal static class Filter
+	public static class Filter
 	{
 		/// <summary>
 		///     Creates a new <see cref="ILogEntryFilter" /> from the given values.

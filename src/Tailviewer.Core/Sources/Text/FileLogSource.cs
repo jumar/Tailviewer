@@ -25,7 +25,7 @@ namespace Tailviewer.Core
 	///      - When the format detector changes its mind and is now even more sure that the format is actually is
 	///    - Share functionality between different formats (streaming text files into memory shouldn't be done by the same class which is trying to make sense of the data)
 	/// </remarks>
-	internal sealed class FileLogSource
+	public sealed class FileLogSource
 		: AbstractLogSource
 		, ILogSourceListener
 	{

@@ -9,7 +9,7 @@ namespace Tailviewer.Core
 	///     because its meaning is understood (such as Timestamp, etc...).
 	/// </summary>
 	/// <typeparam name="T"></typeparam>
-	internal sealed class WellKnownColumnDescriptor<T>
+	public sealed class WellKnownColumnDescriptor<T>
 		: IColumnDescriptor<T>
 	{
 		private readonly string _id;

@@ -24,7 +24,7 @@ namespace Tailviewer.Core
 	///    who's signature is guaranteed to never change.
 	/// </remarks>
 	[DebuggerTypeProxy(typeof(LogSourceDebuggerVisualization))]
-	internal sealed class LogSourceProxy
+	public  sealed class LogSourceProxy
 		: ILogSourceProxy
 		, ILogSourceListener
 	{
@@ -78,7 +78,7 @@ namespace Tailviewer.Core
 		/// <param name="maximumWaitTime"></param>
 		/// <param name="innerLogSource"></param>
 		/// <param name="maxEntryCount"></param>
-		internal LogSourceProxy(ITaskScheduler taskScheduler, TimeSpan maximumWaitTime, ILogSource innerLogSource, int maxEntryCount = DefaultMaxEntryCount)
+		public LogSourceProxy(ITaskScheduler taskScheduler, TimeSpan maximumWaitTime, ILogSource innerLogSource, int maxEntryCount = DefaultMaxEntryCount)
 			: this(taskScheduler, maximumWaitTime, maxEntryCount)
 		{
 			InnerLogSource = innerLogSource;

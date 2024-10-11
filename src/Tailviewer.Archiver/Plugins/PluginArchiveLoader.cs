@@ -273,7 +273,7 @@ namespace Tailviewer.Archiver.Plugins
 		private static string GetAssemblyFullPath(ResolveEventArgs args)
 		{
 			var entryAssembly = Assembly.GetEntryAssembly();
-			var folder = AssemblyExtensions.GetFolder(entryAssembly);
+			var folder = Tailviewer.Core.AssemblyExtensions.GetFolder(entryAssembly);
 			var assemblyName = args.Name;
 			var idx = assemblyName.IndexOf(',');
 			if (idx != -1)

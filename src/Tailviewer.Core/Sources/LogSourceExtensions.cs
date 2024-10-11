@@ -251,7 +251,7 @@ namespace Tailviewer.Core
 		/// <param name="logLineFilter"></param>
 		/// <param name="logEntryFilter"></param>
 		/// <returns></returns>
-		internal static FilteredLogSource AsFiltered(this ILogSource logSource,
+		public static FilteredLogSource AsFiltered(this ILogSource logSource,
 		                                           ITaskScheduler scheduler,
 		                                           ILogLineFilter logLineFilter,
 		                                           ILogEntryFilter logEntryFilter)
@@ -268,7 +268,7 @@ namespace Tailviewer.Core
 		/// <param name="logEntryFilter"></param>
 		/// <param name="maximumWaitTime"></param>
 		/// <returns></returns>
-		internal static FilteredLogSource AsFiltered(this ILogSource logSource,
+		public static FilteredLogSource AsFiltered(this ILogSource logSource,
 		                                           ITaskScheduler scheduler,
 		                                           ILogLineFilter logLineFilter,
 		                                           ILogEntryFilter logEntryFilter,

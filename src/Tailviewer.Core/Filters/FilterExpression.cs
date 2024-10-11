@@ -9,7 +9,7 @@ namespace Tailviewer.Core
 	/// <summary>
 	/// Parses a user supplied string into a boolean expression.
 	/// </summary>
-	internal sealed class FilterExpression
+	public sealed class FilterExpression
 		: ILogEntryFilter
 	{
 		private readonly IExpression _expression;

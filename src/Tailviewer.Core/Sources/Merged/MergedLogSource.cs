@@ -23,7 +23,7 @@ namespace Tailviewer.Core
 	///    who's signature is guaranteed to never change.
 	/// </remarks>
 	[DebuggerTypeProxy(typeof(LogSourceDebuggerVisualization))]
-	internal sealed class MergedLogSource
+	public sealed class MergedLogSource
 		: AbstractLogSource
 		, IMergedLogFile
 		, ILogSourceListener
@@ -47,7 +47,7 @@ namespace Tailviewer.Core
 		/// <param name="scheduler"></param>
 		/// <param name="maximumWaitTime"></param>
 		/// <param name="sources"></param>
-		internal MergedLogSource(ITaskScheduler scheduler, TimeSpan maximumWaitTime, IEnumerable<ILogSource> sources)
+		public MergedLogSource(ITaskScheduler scheduler, TimeSpan maximumWaitTime, IEnumerable<ILogSource> sources)
 			: this(scheduler, maximumWaitTime, sources.ToArray())
 		{
 		}

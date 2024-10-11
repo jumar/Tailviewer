@@ -20,7 +20,7 @@ namespace Tailviewer.Core
 	///    over time. In order to create an instance of this type, simply call <see cref="ILogSourceFactory.CreateEventLogFile"/>
 	///    who's signature is guaranteed to never change.
 	/// </remarks>
-	internal sealed class EventLogSource
+	public sealed class EventLogSource
 		: ILogSource
 	{
 		private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
@@ -54,7 +54,7 @@ namespace Tailviewer.Core
 		/// </summary>
 		/// <param name="scheduler"></param>
 		/// <param name="fileName"></param>
-		internal EventLogSource(ITaskScheduler scheduler, string fileName)
+		public EventLogSource(ITaskScheduler scheduler, string fileName)
 		{
 			_scheduler = scheduler;
 			_fileName = fileName;

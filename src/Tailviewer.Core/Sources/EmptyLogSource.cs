@@ -6,7 +6,7 @@ using Tailviewer.Api;
 // ReSharper disable once CheckNamespace
 namespace Tailviewer.Core
 {
-	internal sealed class EmptyLogSource
+	public sealed class EmptyLogSource
 		: ILogSource
 	{
 		private readonly PropertiesBufferList _properties = new PropertiesBufferList(Core.Properties.Minimum);

@@ -15,7 +15,7 @@ namespace Tailviewer.Core
 	///    Responsible for buffering entire log entries in memory so they may be retrieved later one a bit quicker.
 	/// </summary>
 	[DebuggerTypeProxy(typeof(LogSourceDebuggerVisualization))]
-	internal sealed class PageBufferedLogSource
+	public sealed class PageBufferedLogSource
 		: ILogSource
 		, ILogSourceListener
 	{

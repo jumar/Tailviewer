@@ -1,12 +1,5 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
-
-// General Information about an assembly is controlled through the following
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-[assembly: AssemblyTitle("Tailviewer.PluginRegistry")]
-[assembly: AssemblyDescription("Maintain and provide plugins to tailviewer clients")]
-[assembly: AssemblyProduct("Tailviewer.PluginRegistry")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible

@@ -20,7 +20,7 @@ namespace Tailviewer.Core
 	///    who's signature is guaranteed to never change.
 	/// </remarks>
 	[DebuggerTypeProxy(typeof(LogSourceDebuggerVisualization))]
-	internal sealed class FilteredLogSource
+	public sealed class FilteredLogSource
 		: AbstractLogSource
 		, ILogSourceListener
 	{

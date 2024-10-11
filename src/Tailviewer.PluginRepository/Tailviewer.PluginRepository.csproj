@@ -1,38 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BA02A61B-2615-4CEF-8B7E-289A8E7CD204}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Tailviewer.PluginRepository</RootNamespace>
     <AssemblyName>repository</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-    <TargetFrameworkProfile />
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\..\bin\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\..\bin\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -41,130 +10,39 @@
     <AssemblyOriginatorKeyFile>../../sig/key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CommandLine, Version=2.5.0.0, Culture=neutral, PublicKeyToken=5a870481e358d379, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CommandLineParser.2.5.0\lib\net45\CommandLine.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="IsabelDb, Version=0.6.21.0, Culture=neutral, PublicKeyToken=951c63ca832f7094, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\IsabelDb.0.6.21\lib\net45\IsabelDb.dll</HintPath>
-    </Reference>
-    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="PE, Version=0.1.13.0, Culture=neutral, PublicKeyToken=951c63ca832f7094, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\PE.0.1.13\lib\net45\PE.dll</HintPath>
-    </Reference>
-    <Reference Include="protobuf-net, Version=2.4.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\protobuf-net.2.4.0\lib\net40\protobuf-net.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpRemote, Version=0.6.184.0, Culture=neutral, PublicKeyToken=951c63ca832f7094, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SharpRemote.0.6.184\lib\net45\SharpRemote.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpRemote.Host, Version=0.6.184.0, Culture=neutral, PublicKeyToken=951c63ca832f7094, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SharpRemote.0.6.184\lib\net45\SharpRemote.Host.exe</HintPath>
-    </Reference>
-    <Reference Include="System" />
     <Reference Include="System.Configuration" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.SQLite, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Data.SQLite.Core.1.0.111.0\lib\net451\System.Data.SQLite.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SQLite.EF6, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Data.SQLite.EF6.1.0.111.0\lib\net451\System.Data.SQLite.EF6.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SQLite.Linq, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Data.SQLite.Linq.1.0.111.0\lib\net451\System.Data.SQLite.Linq.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Extensions, Version=2.0.72.0, Culture=neutral, PublicKeyToken=951c63ca832f7094, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Threading.Extensions.2.0.72\lib\net45\System.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Serialization" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Applications\AddPlugin.cs" />
-    <Compile Include="Applications\AddPluginOptions.cs" />
-    <Compile Include="Applications\AddUser.cs" />
-    <Compile Include="Applications\AddUserOptions.cs" />
-    <Compile Include="Applications\Export.cs" />
-    <Compile Include="Applications\ExportOptions.cs" />
-    <Compile Include="Applications\IApplication.cs" />
-    <Compile Include="Applications\IPEndPointExtensions.cs" />
-    <Compile Include="Applications\ListPluginsOptions.cs" />
-    <Compile Include="Applications\ListPlugins.cs" />
-    <Compile Include="Applications\ListUsers.cs" />
-    <Compile Include="Applications\ListUsersOptions.cs" />
-    <Compile Include="Applications\PluginRepositoryProxy.cs" />
-    <Compile Include="Applications\RemovePlugin.cs" />
-    <Compile Include="Applications\RemovePluginOptions.cs" />
-    <Compile Include="Applications\RemoveUser.cs" />
-    <Compile Include="Applications\RemoveUserOptions.cs" />
-    <Compile Include="Applications\RunServer.cs" />
-    <Compile Include="Applications\RunServerOptions.cs" />
-    <Compile Include="Applications\WriteConfiguration.cs" />
-    <Compile Include="Applications\WriteConfigurationOptions.cs" />
-    <Compile Include="Bootstrapper.cs" />
-    <Compile Include="Configuration\Publishing.cs" />
-    <Compile Include="Configuration\ServerConfiguration.cs" />
-    <Compile Include="Constants.cs" />
-    <Compile Include="Entities\Change.cs" />
-    <Compile Include="Entities\PublishedPlugin.cs" />
-    <Compile Include="Entities\User.cs" />
-    <Compile Include="Exceptions\CannotAddUserException.cs" />
-    <Compile Include="Exceptions\CannotRemovePluginException.cs" />
-    <Compile Include="Exceptions\CannotRemoveUserException.cs" />
-    <Compile Include="ExitCode.cs" />
-    <Compile Include="IInternalPluginRepository.cs" />
-    <Compile Include="Logging.cs" />
-    <Compile Include="PluginRepository.cs" />
-    <Compile Include="App.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="..\GlobalAssemblyInfo.cs">
       <Link>Properties\GlobalAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="Server.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="pack_repository.cmd" />
-    <None Include="README.md" />
+    <ProjectReference Include="..\Tailviewer.Archiver\Tailviewer.Archiver.csproj" />
+    <ProjectReference Include="..\Tailviewer.Core\Tailviewer.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tailviewer.Archiver\Tailviewer.Archiver.csproj">
-      <Project>{C667EB8A-6781-4623-AC7C-D3FBA2F6E7D4}</Project>
-      <Name>Tailviewer.Archiver</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Tailviewer.Core\Tailviewer.Core.csproj">
-      <Project>{62c60d20-180e-4a59-9ef3-30161e1e31cb}</Project>
-      <Name>Tailviewer.Core</Name>
-    </ProjectReference>
+    <PackageReference Include="CommandLineParser" Version="2.5.0" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="IsabelDb" Version="0.6.21" />
+    <PackageReference Include="log4net" Version="2.0.12" />
+    <PackageReference Include="PE" Version="0.1.13" />
+    <PackageReference Include="protobuf-net" Version="2.4.0" />
+    <PackageReference Include="SharpRemote" Version="0.6.203" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.111.0" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.111.0" />
+    <PackageReference Include="System.Data.SQLite.EF6" Version="1.0.119" />
+    <PackageReference Include="System.Threading.Extensions" Version="2.0.72" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\..\packages\System.Data.SQLite.Core.1.0.111.0\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\..\packages\System.Data.SQLite.Core.1.0.111.0\build\net451\System.Data.SQLite.Core.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\System.Data.SQLite.Core.1.0.111.0\build\net451\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\System.Data.SQLite.Core.1.0.111.0\build\net451\System.Data.SQLite.Core.targets'))" />
-  </Target>
+  <PropertyGroup />
   <PropertyGroup>
-    <PreBuildEvent>cd $(OutputDir)
-mkdir "x64"
-mkdir "x86"
-copy "..\packages\System.Data.SQLite.Core.1.0.111.0\build\net45\x64\SQLite.Interop.dll" "x64\SQLite.Interop.dll"
-copy "..\packages\System.Data.SQLite.Core.1.0.111.0\build\net45\x86\SQLite.Interop.dll" "x86\SQLite.Interop.dll"
-</PreBuildEvent>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <OutputPath>..\..\bin\</OutputPath>
+    <AssemblyTitle>Tailviewer.PluginRegistry</AssemblyTitle>
+    <Description>Maintain and provide plugins to tailviewer clients</Description>
+    <Product>Tailviewer.PluginRegistry</Product>
   </PropertyGroup>
 </Project>

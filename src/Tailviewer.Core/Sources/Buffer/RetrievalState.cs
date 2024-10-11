@@ -4,7 +4,7 @@ namespace Tailviewer.Core
 	/// <summary>
 	/// Describes if a log entry was retrieved from a column or not.
 	/// </summary>
-	internal enum RetrievalState : byte
+	public enum RetrievalState : byte
 	{
 		/// <summary>
 		/// The requested data wasn't retrieved because it isn't part of the source.
